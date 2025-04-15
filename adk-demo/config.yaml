@@ -1,0 +1,10 @@
+model:
+  provider: litellm
+  custom_llm: custom_llm.DummyLLM  # Using our DummyLLM directly
+  model: "dummy-model"
+  temperature: 0.7
+  max_tokens: 1000
+
+functions:
+  - path: functions
+    name: agent
